@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           开源中国社区
-@version        1.0.2
+@version        1.0.0
 @description    A new userstyle
 @namespace      https://github.com/osdu/stylus-usercss
 @supportURL     https://github.com/osdu/stylus-usercss/issues
@@ -8,19 +8,8 @@
 @updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/oschina.net.user.css
 @author         osdu
 ==/UserStyle== */
-@-moz-document domain("oschina.net") {
-	#vfastpost,
-	dl[id^='ratelog_'] {
+@-moz-document domain("www.oschina.net") {
+	.soft-container {
 		display: none;
-	}
-
-	.plc.plm {
-		display: none;
-	}
-
-	.plc .pct img {
-		width: auto;
-		height: auto;
-		max-width: 100%;
 	}
 }
