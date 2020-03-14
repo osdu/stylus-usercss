@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           打印样式 - APKMirror
+@version        1.0.0
+@description    打印样式
+@preprocessor   less
+@author         snail
+@namespace      https://github.com/osdu/stylus-usercss
+@supportURL     https://github.com/osdu/stylus-usercss/issues
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/apkmirror.com.user.css
+@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/usercss/apkmirror.com.user.css
+==/UserStyle== */
+
+@-moz-document domain("apkmirror.com") {
+	#content {
+		width: 100%
+	}
+
+	#sidebar,
+	.footer {
+		display: none;
+	}
+
+	.noPadding.center {
+		text-align: left;
+	}
+
+	.pushbullet-subscribe-widget {
+		display: none !important;
+	}
+}
