@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           ABP 反规避过滤器
+@version        1.0.0
+@description    广告过滤
+@preprocessor   less
+@author         snail
+@namespace      https://github.com/osdu/stylus-usercss
+@supportURL     https://github.com/osdu/stylus-usercss/issues
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/abp/abp-filters-anti-cv.user.css
+@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/abp/abp-filters-anti-cv.user.css
+==/UserStyle== */
+
+@-moz-document domain("xclient.info") {
+	#abptip {
+		display: none;
+	}
+}
