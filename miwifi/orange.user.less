@@ -1,0 +1,371 @@
+/* ==UserStyle==
+@name           miwifi.io - 果粒橙
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("miwifi.io") {
+	@media all {
+		* {
+			font-family: Arial;
+			font-size: 14px;
+		}
+
+		body {
+			font-family: Arial;
+			font-size: 16px;
+		}
+
+		/* Chowfafa style */
+		#content {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		/* Chowfafa style */
+		ul.tabmenu {
+			font-size: 12pt;
+			padding: 0 0 0 3px;
+		}
+
+		div.tabmenu3,
+		div.tabmenu4,
+		div.tabmenu5 {
+			background: -moz-radial-gradient(80% 5%, farthest-side, #ffde9e, #fff);
+			background: -webkit-radial-gradient(80% 5%, farthest-side, #ffde9e, #fff);
+		}
+
+		ul.tabmenu li {
+			font-size: 14px;
+		}
+
+		ul.tabmenu li a {
+			font-size: 100%;
+		}
+
+		div.hostinfo {
+			padding: .5em 0 .5em .5em;
+		}
+
+		#menubar {
+			background: #383c48;
+		}
+
+		html #menubar a:link,
+		html #menubar a:visited {
+			font-size: 100%;
+			padding: .5em .5em 0 0;
+			background: #383c48;
+		}
+
+		html #menubar a:link:hover,
+		html #menubar a:visited:hover,
+		html #menubar a:link:active,
+		html #menubar a:visited:active,
+		#menubar a:link:focus,
+		#menubar a:visited:focus {
+			background: #383c48;
+		}
+
+		html #menubar a:link.active,
+		html #menubar a:visited.active,
+		html #menubar a:link.preactive,
+		html #menubar a:visited.preactive {
+			background: #383c48;
+		}
+
+		html #menubar a:link.warning,
+		html #menubar a:visited.warning {
+			background: #383c48;
+		}
+
+		#modemenu {
+			background: #383c48;
+		}
+
+		textarea#syslog {
+			font-family: arial;
+			font-size: 12px;
+			line-height: 20px;
+			box-sizing: border-box;
+			width: 100%;
+			margin-left: 0;
+			padding: 8px;
+			border: 1px solid #ccc;
+		}
+
+		#maincontainer {
+			width: calc(100% - 16px);
+		}
+
+		#maincontent {
+			color: #383c48;
+			border-style: none;
+		}
+
+		#maincontent h2 {
+			font-family: 'Microsoft YaHei';
+			font-size: 22px;
+			padding-bottom: 10px;
+		}
+
+		.cbi-section {
+			color: #383c48;
+		}
+
+		select {
+			width: 184px;
+			height: 28px;
+			padding: 1px 2px 1px 2px;
+			color: #383c48;
+			border-width: 1px;
+			border-color: #383c48;
+			border-radius: 3px;
+			background: #eee;
+		}
+
+		input {
+			height: 24px;
+			padding: 1px 6px 1px 6px;
+			color: #383c48;
+			border-color: #383c48;
+			border-radius: 3px;
+		}
+
+		textarea {
+			padding: 1px 2px 1px 2px;
+			color: #383c48;
+			border-color: #383c48;
+			border-radius: 3px;
+		}
+
+		input:focus,
+		input:hover,
+		select:focus,
+		select:hover {
+			color: #383c48;
+		}
+
+		select,
+		input[type=text],
+		input[type=password] {
+			margin: 8px 0 8px 0;
+		}
+
+		td select,
+		td input[type=text],
+		td input[type=password] {
+			font-size: 14px;
+		}
+
+		input.cbi-button {
+			height: 28px;
+		}
+
+		input.cbi-input-user {
+			color: #383c48;
+		}
+
+		input.cbi-input-password {
+			color: #383c48;
+		}
+
+		input.cbi-input-find,
+		input.cbi-button-find {
+			color: #383c48;
+		}
+
+		input.cbi-input-reload {
+			color: #383c48;
+		}
+
+		input.cbi-input-add,
+		input.cbi-button-add {
+			color: #383c48;
+		}
+
+		input.cbi-input-fieldadd,
+		input.cbi-button-fieldadd {
+			color: #383c48;
+		}
+
+		input.cbi-input-reset,
+		input.cbi-button-reset {
+			color: #383c48;
+		}
+
+		input.cbi-input-save,
+		input.cbi-button-save {
+			color: #383c48;
+		}
+
+		input.cbi-input-apply,
+		input.cbi-button-apply {
+			color: #383c48;
+		}
+
+		input.cbi-input-link,
+		input.cbi-button-link {
+			color: #383c48;
+		}
+
+		input.cbi-input-download,
+		input.cbi-button-download {
+			color: #383c48;
+		}
+
+		input.cbi-input-remove,
+		div.cbi-section-remove input {
+			color: #383c48;
+		}
+
+		input.cbi-button-up {
+			padding-right: 6px;
+		}
+
+		input.cbi-button-down {
+			padding-right: 6px;
+		}
+
+		input.cbi-button-edit {
+			color: #383c48;
+		}
+
+		input.cbi-button-reload {
+			color: #383c48;
+		}
+
+		input.cbi-button-reset {
+			color: #383c48;
+		}
+
+		input.cbi-button-remove {
+			color: #383c48;
+		}
+
+		textarea {
+			line-height: 20px;
+		}
+
+		table td,
+		table th {
+			color: #383c48;
+		}
+
+		table.smalltext {
+			color: #383c48;
+		}
+
+		table.smalltext tr:hover td {
+			color: #383c48;
+		}
+
+		table.cbi-section-table .cbi-rowstyle-1 {
+			color: #383c48;
+		}
+
+		table.cbi-section-table .cbi-rowstyle-1:hover,
+		table.cbi-section-table .cbi-rowstyle-2:hover {
+			color: #383c48;
+		}
+
+		table.cbi-section-table .cbi-section-table-cell {
+			padding: 0 10px 0 2px;
+		}
+
+		.cbi-rowstyle-2 {
+			color: #383c48;
+		}
+
+		div.cbi-value {
+			padding: .25em 1em;
+		}
+
+		div.cbi-value:hover {
+			color: #383c48;
+		}
+
+		div.cbi-value-description {
+			display: block;
+		}
+
+		div.cbi-section-create .cbi-button {
+			margin: 10px;
+		}
+
+		table.cbi-section-table {
+			font-size: 100%;
+			line-height: 22px;
+		}
+
+		ul.cbi-tabmenu li.cbi-tab-highlighted a {
+			color: #383c48;
+		}
+
+		ul.cbi-tabmenu li a:hover {
+			color: #383c48;
+		}
+
+		ul.cbi-tabmenu li.cbi-tab a {
+			color: #383c48;
+		}
+
+		.luci {
+			left: .3em;
+			width: 98%;
+			text-align: center;
+		}
+
+		.error500 {
+			color: #383c48;
+		}
+
+		.errorbox a {
+			color: #383c48 !important;
+		}
+
+		.ifacebadge-active {
+			border-color: #383c48;
+		}
+
+		form>div>input[type=submit],
+		form>div>input[type=reset] {
+			padding-right: 8px;
+			padding-left: 18px;
+			background-position-x: 2px;
+		}
+	}
+
+	@media all {
+		ul.tabmenu li a {
+			margin-top: 4px;
+			padding: 5px 10px;
+		}
+
+		ul.tabmenu li.active a {
+			border-color: #fe8834;
+			background: #f66600;
+		}
+
+		div.tabmenu2 {
+			border-style: none;
+			border-color: #fe8834 #fe8834 #fe8834 #fe8834;
+			background: #f66600;
+		}
+
+		.tabmenu2 ul.tabmenu li a {
+			border-color: #f5a222;
+			background: #fe8834;
+		}
+
+		.tabmenu2 ul.tabmenu li.active a {
+			border-color: #fe8834;
+			background: #f66600;
+		}
+
+		#bgbox {
+			background: #383c48;
+		}
+	}
+}

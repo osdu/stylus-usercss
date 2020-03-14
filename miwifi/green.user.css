@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name           miwifi.io - 原谅绿
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("miwifi.io") {
+  body {
+    background-color: #070707;
+  }
+  ul.tabmenu li a {
+    padding: 5px 12px;
+    color: #999;
+    border-radius: 4px 4px 0 0;
+    background: #333;
+  }
+  ul.tabmenu li.active a {
+    color: #fff;
+    border-color: #0c884f;
+    background: #0c884f;
+  }
+  ul.tabmenu li:hover a {
+    color: #ccc;
+    border-color: #888 #444 #000 #888;
+    background: #666;
+  }
+  div.tabmenu2 {
+    color: #fff;
+    border-width: 0.09em;
+    border-radius: 4px 4px 0 0;
+    border-color: #0c884f;
+    background: #0c884f;
+  }
+  .tabmenu2 ul.tabmenu li a {
+    color: #fff;
+    border-color: #0c884f;
+    background: #0c884f;
+  }
+  .tabmenu2 ul.tabmenu li.active a {
+    color: #fff;
+    border-color: #0c884f;
+    background: #0c884f;
+  }
+  #bgbox {
+    background-image: url(img/bg-01.jpg);
+    background-size: cover;
+    background: none;
+  }
+}
