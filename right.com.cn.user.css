@@ -1,14 +1,17 @@
 /* ==UserStyle==
-@name           恩山无线论坛
-@version        1.0.2
-@description    A new userstyle
+@name           打印样式 - 恩山无线论坛
+@version        1.0.4
+@description    广告屏蔽
+@preprocessor   less
+@author         snail
 @namespace      https://github.com/osdu/stylus-usercss
 @supportURL     https://github.com/osdu/stylus-usercss/issues
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/right.com.cn.user.css
 @updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/right.com.cn.user.css
-@author         osdu
 ==/UserStyle== */
+
 @-moz-document domain("right.com.cn") {
+
 	#vfastpost,
 	dl[id^='ratelog_'] {
 		display: none;
@@ -24,7 +27,7 @@
 		max-width: 100%;
 	}
 
-	#hd > .wp > .hdc.cl > h2 {
+	#hd>.wp>.hdc.cl>h2 {
 		display: none;
 	}
 }
