@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           打印优化 - SegmentFault
+@version        1.0.1
+@description    打印优化
+@preprocessor   less
+@author         snail
+@namespace      https://github.com/osdu/stylus-usercss
+@supportURL     https://github.com/osdu/stylus-usercss/issues
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/segmentfault.com.user.css
+@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/usercss/segmentfault.com.user.css
+==/UserStyle== */
+
+@-moz-document domain("segmentfault.com") {
+	@media print {
+
+		#footer,
+		#comment-area,
+		#comment-area+h5.mt-4,
+		#paradigm-article-related,
+		#sf-article>.row>.col-xl-auto {
+			display: none !important;
+		}
+
+		.fmt pre,
+		.tui-editor-contents pre {
+			max-height: none !important;
+		}
+	}
+}
