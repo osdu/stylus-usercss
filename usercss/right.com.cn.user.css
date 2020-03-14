@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           打印样式 - 无忧启动论坛
+@name           打印样式 - 恩山无线论坛
 @version        1.0.4
 @description    广告屏蔽
 @preprocessor   less
 @author         snail
 @namespace      https://github.com/osdu/stylus-usercss
 @supportURL     https://github.com/osdu/stylus-usercss/issues
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/wuyou.net.user.css
-@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/wuyou.net.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/right.com.cn.user.css
+@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/usercss/right.com.cn.user.css
 ==/UserStyle== */
 
-@-moz-document domain("wuyou.net") {
+@-moz-document domain("right.com.cn") {
 
 	#vfastpost,
 	dl[id^='ratelog_'] {
