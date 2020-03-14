@@ -5,9 +5,7 @@
 @preprocessor   less
 @author         snail
 @namespace      https://github.com/osdu/stylus-usercss
-@supportURL     https://github.com/osdu/stylus-usercss/issues
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/right.com.cn.user.css
-@updateURL      https://raw.githubusercontent.com/osdu/stylus-usercss/master/usercss/right.com.cn.user.css
 ==/UserStyle== */
 @-moz-document domain("right.com.cn") {
   #vfastpost,
