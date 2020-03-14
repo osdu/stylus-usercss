@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           打印样式 - 百度全家桶
+@name           百度全家桶
 @version        1.0.0
 @description    广告屏蔽
 @preprocessor   less
@@ -13,35 +13,28 @@
   .bd-left .ad-platform-tips.ad-multi-tips {
     display: none;
   }
-
   .bd-aside .ad-platform-tips {
     display: none;
   }
 }
-
 @-moz-document domain("baijiahao.baidu.com") {
   .anci_header_content {
     min-width: 900px;
     width: 90%;
   }
-
   #content-container {
     min-width: 900px;
     width: 90%;
   }
-
   #left-container {
     width: calc(100% - 300px);
   }
-
   #left-container .article {
     width: 100%;
   }
-
   #right-container .related-news {
     display: none;
   }
-
   .article-content img.large {
     width: auto;
     max-width: 100%;
