@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name           小米路由器 MMP
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@preprocessor 	less
+@homepageURL   	https://github.com/openstyles/stylus/wiki/UserCSS-authors#hosting-a-usercss
+
+@var color backgroundColor "背景色" blue
+@var select backgroundImage "背景图" {
+    "刘亦菲": "//box.anmpserver.com/adisk/bgs/693ad07.jpg",
+    "苏黎世 （蓝色）": "//box.anmpserver.com/adisk/bgs/zurich_blue.png",
+    "苏黎世 （灰色）": "//box.anmpserver.com/adisk/bgs/zurich_gray.png",
+    "None": "none"
+}
+==/UserStyle== */
+@-moz-document domain("miwifi.io"),
+domain("ddns.wecenter.cc") {
+  :root {
+    --backgroundColor2: #369;
+  }
+  #bgbox .inner {
+    background-image: url("@backgroundImage") !important;
+  }
+  .tabmenu1 {
+    font-size: 14px;
+  }
+}
