@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           开源中国社区
+@name           打印优化 - 开源中国社区
 @version        1.0.3
 @description    广告屏蔽 && 打印优化
 @preprocessor   less
@@ -23,6 +23,7 @@
     .article-footer-list,
     .source-info + div.segment.action,
     .back-to-top-toggle,
+    #btnDownloadApp,
     #footer,
     #copyright {
       display: none !important;
