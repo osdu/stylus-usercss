@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           打印优化 - 423Down
-@version        1.0.3
+@version        1.0.4
 @description    样式美化 && 打印优化
 @preprocessor   less
 @author         snail
@@ -40,12 +40,7 @@
 		display: none;
 	}
 
-	/* 首页 */
-	@media screen and (max-width: 980px) {
-		.home.blog .content {
-			padding-left: 0px
-		}
-	}
+
 
 	/* 内页 */
 	.meta {
@@ -71,5 +66,20 @@
 		max-width: 100%;
 		width: auto;
 		display: block;
+	}
+
+	/* 首页 */
+	@media screen and (max-width: 980px) {
+		.home.blog .content {
+			padding-left: 0px
+		}
+	}
+
+	@media print {
+
+		#postcomments,
+		#postcomments+.queryinfo {
+			display: none;
+		}
 	}
 }
