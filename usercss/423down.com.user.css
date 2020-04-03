@@ -47,9 +47,10 @@
     display: none;
   }
   .wrapper .content p > img {
+    display: block;
     max-width: 100%;
     width: auto;
-    display: block;
+    height: auto !important;
   }
   /* 首页 */
   @media screen and (max-width: 980px) {
