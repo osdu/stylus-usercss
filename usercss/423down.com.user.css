@@ -59,6 +59,7 @@
     }
   }
   @media print {
+    #respond,
     #postcomments,
     #postcomments + .queryinfo {
       display: none;
