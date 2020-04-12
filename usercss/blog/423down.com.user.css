@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           打印优化 - 423Down
-@version        1.0.4
 @description    样式美化 && 打印优化
-@preprocessor   less
 @author         snail
+@version        1.0.5
+@preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/423down.com.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/423down.com.user.css
 ==/UserStyle== */
 @-moz-document domain("www.423down.com") {
   /* 全局 */

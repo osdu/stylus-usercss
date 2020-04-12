@@ -1,16 +1,14 @@
 /* ==UserStyle==
 @name           打印优化 - 423Down
-@version        1.0.4
 @description    样式美化 && 打印优化
-@preprocessor   less
 @author         snail
+@version        1.0.5
+@preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/423down.com.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/423down.com.user.css
 ==/UserStyle== */
 
-
 @-moz-document domain("www.423down.com") {
-
 	/* 全局 */
 	.logo {
 		background: url(https://192.168.31.1/zd423.png) no-repeat;
@@ -40,8 +38,6 @@
 		display: none;
 	}
 
-
-
 	/* 内页 */
 	.meta {
 		border-bottom: 1px solid #efefef;
@@ -62,7 +58,7 @@
 		display: none;
 	}
 
-	.wrapper .content p>img {
+	.wrapper .content p > img {
 		display: block;
 		max-width: 100%;
 		width: auto;
@@ -72,14 +68,14 @@
 	/* 首页 */
 	@media screen and (max-width: 980px) {
 		.home.blog .content {
-			padding-left: 0px
+			padding-left: 0px;
 		}
 	}
 
 	@media print {
 		#respond,
 		#postcomments,
-		#postcomments+.queryinfo {
+		#postcomments + .queryinfo {
 			display: none;
 		}
 	}
