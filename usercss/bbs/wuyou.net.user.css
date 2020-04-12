@@ -1,15 +1,15 @@
 /* ==UserStyle==
 @name           打印优化 - 无忧启动论坛
-@version        1.0.5
+@version        1.0.6
 @description    广告屏蔽 && 打印优化
 @preprocessor   less
 @author         snail
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/wuyou.net.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/bbs/wuyou.net.user.css
 ==/UserStyle== */
 @-moz-document domain("wuyou.net") {
   #vfastpost,
-  dl[id^='ratelog_'] {
+  dl[id^="ratelog_"] {
     display: none;
   }
   .plc.plm {
