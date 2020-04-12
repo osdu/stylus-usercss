@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           打印优化 - CSDN 博客
-@version        1.0.0
+@version        1.0.1
 @description    打印优化
 @preprocessor   less
 @author         snail
@@ -17,8 +17,15 @@
     main > .template-box {
       display: none !important;
     }
+    div[id^="dmp_ad_"] {
+      display: none !important;
+    }
     .container#mainBox main {
       width: 100% !important;
+    }
+    #article_content {
+      height: auto !important;
+      overflow: auto !important;
     }
   }
 }
