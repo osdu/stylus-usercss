@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           打印优化 - CSDN 博客
+@version        1.0.0
+@description    打印优化
+@preprocessor   less
+@author         snail
+@namespace      https://github.com/osdu/stylus-usercss
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/csdn.net.user.css
+==/UserStyle== */
+
+@-moz-document domain("blog.csdn.net") {
+	@media print {
+		.blog_container_aside,
+		.csdn-side-toolbar,
+		.tool-box.vertical,
+		main > .comment-box,
+		main > .recommend-box,
+		main > .template-box {
+			display: none !important;
+		}
+
+		.container#mainBox main {
+			width: 100% !important;
+		}
+	}
+}
