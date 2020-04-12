@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           打印优化 - 博海拾贝
+@version        1.0.0
+@description    打印优化
+@preprocessor   less
+@author         snail
+@namespace      https://github.com/osdu/stylus-usercss
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/bh.sb.user.css
+==/UserStyle== */
+
+@-moz-document domain("bh.sb") {
+	.sidebar,
+	.relates,
+	.article-social {
+		display: none;
+	}
+	.content {
+		margin-right: 0;
+	}
+	a[href^="https://jinx.loli.net"],
+	img[src^="https://jinx.loli.net"]
+	{
+		display: none;
+	}
+}
