@@ -1,35 +1,34 @@
 /* ==UserStyle==
 @name           打印优化 - 简书
-@version        1.0.1
 @description    打印优化
-@preprocessor   less
 @author         snail
+@version        1.0.2
+@preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/jianshu.com.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/jianshu.com.user.css
 ==/UserStyle== */
 
 @-moz-document domain("www.jianshu.com") {
 	@media print {
-
 		/* 	侧边栏、页脚 */
 		#__next aside,
-		#__next>footer {
+		#__next > footer {
 			display: none;
 		}
 
 		/* 	推荐阅读 */
-		#note-page-comment+section.ouvJEz {
+		#note-page-comment + section.ouvJEz {
 			display: none;
 		}
 
 		/* 按钮 */
-		#__next>footer+div._3Pnjry,
+		#__next > footer + div._3Pnjry,
 		.ant-back-top {
 			display: none;
 		}
 
 		/* 导航 */
-		#__next>header>div._1CSgtu>div._2oDcyf {
+		#__next > header > div._1CSgtu > div._2oDcyf {
 			min-width: 800px;
 		}
 
@@ -37,7 +36,7 @@
 			width: 98%;
 		}
 
-		div[role="main"]>div._gp-ck {
+		div[role="main"] > div._gp-ck {
 			width: 100%;
 		}
 

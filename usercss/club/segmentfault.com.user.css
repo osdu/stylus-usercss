@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           打印优化 - SegmentFault
-@version        1.0.2
 @description    打印优化
-@preprocessor   less
 @author         snail
+@version        1.0.2
+@preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/segmentfault.com.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/segmentfault.com.user.css
 ==/UserStyle== */
 @-moz-document domain("segmentfault.com") {
   @media print {

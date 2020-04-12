@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           打印优化 - 开源中国社区
-@version        1.0.4
 @description    广告屏蔽 && 打印优化
-@preprocessor   less
 @author         snail
+@version        1.0.5
+@preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
-@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/oschina.net.user.css
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
 ==/UserStyle== */
 @-moz-document domain("www.oschina.net") {
   .soft-container {
