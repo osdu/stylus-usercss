@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name           Stylus 美化
+@description    样式美化
+@author         snail
+@version        1.0.0
+@preprocessor   less
+@namespace      https://github.com/osdu/stylus-usercss
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/extensions/stylus.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne") {
+	body {
+		font-family: "Microsoft YaHei", Arial, sans-serif;
+	}
+	.actions:lang(zh) *,
+	#header:lang(zh) * {
+		font-family: "Microsoft YaHei", Arial, sans-serif;
+	}
+	.single-editor {
+		font-size: 14px;
+	}
+	.CodeMirror-code {
+		margin-bottom: 100px;
+	}
+
+	@media (max-width: 850px) {
+		.compact-layout > #header {
+			display: none;
+		}
+		.compact-layout .CodeMirror-scroll {
+			max-height: 100vh !important;
+		}
+	}
+}
