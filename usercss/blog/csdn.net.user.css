@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           打印优化 - CSDN 博客
-@version        1.0.2
+@version        1.0.3
 @description    打印优化
 @preprocessor   less
 @author         snail
@@ -26,7 +26,7 @@
   }
   @media all {
     main > #hide-article-box,
-    .article-info-box > .href-article-edit {
+    .article-info-box > .operating {
       display: none !important;
     }
     .article-info-box > .slide-content-box {
