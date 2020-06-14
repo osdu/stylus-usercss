@@ -2,7 +2,7 @@
 @name           打印优化 - CSDN 博客
 @description    打印优化
 @author         snail
-@version        1.0.7
+@version        1.0.8
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/csdn.net.user.css
@@ -12,6 +12,8 @@
     .blog_container_aside,
     .csdn-side-toolbar,
     .tool-box.vertical,
+    .bottom-pub-footer,
+    .more-toolbox,
     main > .comment-box,
     main > .recommend-box,
     main > .template-box {
@@ -22,6 +24,9 @@
     }
     .container#mainBox main {
       width: 100% !important;
+    }
+    .nodata .container {
+      width: 100%;
     }
   }
   @media all {
