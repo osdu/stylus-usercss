@@ -2,7 +2,7 @@
 @name           打印优化 - 423Down
 @description    样式美化 && 打印优化
 @author         snail
-@version        1.0.7
+@version        1.0.8
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/423down.com.user.css
@@ -27,7 +27,7 @@
   #hasfixed .header {
     position: static;
   }
-  .footer {
+  .footer + center {
     display: none;
   }
   /* 内页 */
@@ -52,6 +52,9 @@
     width: auto;
     height: auto !important;
   }
+  .home.blog .content > a[href^="https://jq.qq.com"] {
+    display: none;
+  }
   /* 首页 */
   @media screen and (max-width: 980px) {
     .home.blog .content {
@@ -62,6 +65,10 @@
     #respond,
     #postcomments,
     #postcomments + .queryinfo {
+      display: none;
+    }
+    .footer,
+    .footer + center {
       display: none;
     }
   }
