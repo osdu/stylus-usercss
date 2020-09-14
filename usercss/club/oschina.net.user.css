@@ -2,7 +2,7 @@
 @name           打印优化 - 开源中国社区
 @description    广告屏蔽 && 打印优化
 @author         snail
-@version        1.0.9
+@version        1.0.10
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
@@ -36,8 +36,14 @@
   }
 }
 @-moz-document url-prefix("https://www.oschina.net/news/") {
+  @media all {
+    .osc-new-layout.page-space-blog .detail-box.collapse .article-detail,
+    .osc-new-layout.page-web-news .detail-box.collapse .article-detail,
+    .osc-new-layout.page-web-project .detail-box.collapse .article-detail {
+      max-height: none !important;
+    }
+  }
   @media print {
-    .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .related-project-box,
     .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .copyright-box,
     .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .action-box,
     .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .recommend-box {
