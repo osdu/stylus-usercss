@@ -2,12 +2,39 @@
 @name           打印优化 - 开源中国社区
 @description    广告屏蔽 && 打印优化
 @author         snail
-@version        1.0.10
+@version        1.0.11
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
 ==/UserStyle== */
-@-moz-document domain("www.oschina.net") {
+@-moz-document domain("oschina.net") {
+  @media all {
+    .header-box .app-download,
+    .header-box .search-box {
+      display: none !important;
+    }
+  }
+  @media print {
+    .back-to-top {
+      display: none !important;
+    }
+    .osc-new-layout .header-box .user-bar__links .user-message > .icon,
+    .osc-new-layout .header-box .user-bar__links .user-info .icon {
+      display: none !important;
+    }
+    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .copyright-box,
+    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .action-box,
+    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .recommend-box {
+      display: none !important;
+    }
+    .osc-new-layout.page-space-blog .detail-toolbar-box,
+    .osc-new-layout.page-web-news .detail-toolbar-box,
+    .osc-new-layout.page-web-project .detail-toolbar-box {
+      display: none !important;
+    }
+  }
+}
+@-moz-document domain("oschina.net") {
   @media print {
     .osc-new-layout .header-box--fixed {
       position: absolute;
