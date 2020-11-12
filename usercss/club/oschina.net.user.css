@@ -2,7 +2,7 @@
 @name           打印优化 - 开源中国社区
 @description    广告屏蔽 && 打印优化
 @author         snail
-@version        1.1.0
+@version        1.2.0
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
@@ -29,6 +29,29 @@
     }
   }
 }
+@-moz-document url-prefix("https://www.oschina.net/p/") {
+  @media all {
+    .project-detail-container .detail-body-box .article-detail {
+      max-height: none !important;
+    }
+    .project-detail-container .detail-body-box .collapse-bar {
+      display: none !important;
+    }
+    .project-detail-container .comment-item:not(.comment-item--child) {
+      display: block !important;
+    }
+  }
+  @media print {
+    .project-detail-container .sidebar-box,
+    .project-detail-container .detail-toolbar-box,
+    .project-detail-container .header-info__meta {
+      display: none !important;
+    }
+    .project-detail-container .detail-body-box .main-box {
+      width: 100% !important;
+    }
+  }
+}
 @-moz-document url-prefix("https://www.oschina.net/news/") {
   @media print {
     .news-detail-container .sidebar-box,
@@ -41,27 +64,6 @@
     }
     .news-detail-container .detail-body-box .main-box {
       width: 100% !important;
-    }
-  }
-}
-@-moz-document url-prefix("https://www.oschina.net/p/") {
-  @media print {
-    .project-detail-container .sidebar-box,
-    .project-detail-container .detail-toolbar-box,
-    .project-detail-container .header-info__meta {
-      display: none !important;
-    }
-    .project-detail-container .detail-body-box .main-box {
-      width: 100% !important;
-    }
-    .project-detail-container .detail-body-box .article-detail {
-      max-height: none !important;
-    }
-    .project-detail-container .detail-body-box .collapse-bar {
-      display: none !important;
-    }
-    .project-detail-container .comment-item:not(.comment-item--child) {
-      display: block !important;
     }
   }
 }
