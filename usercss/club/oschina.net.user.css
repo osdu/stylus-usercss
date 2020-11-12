@@ -2,7 +2,7 @@
 @name           打印优化 - 开源中国社区
 @description    广告屏蔽 && 打印优化
 @author         snail
-@version        1.0.11
+@version        1.1.0
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
@@ -13,85 +13,55 @@
     .header-box .search-box {
       display: none !important;
     }
-  }
-  @media print {
-    .back-to-top {
-      display: none !important;
-    }
-    .osc-new-layout .header-box .user-bar__links .user-message > .icon,
-    .osc-new-layout .header-box .user-bar__links .user-info .icon {
-      display: none !important;
-    }
-    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .copyright-box,
-    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .action-box,
-    .osc-new-layout.page-space-blog .blog-detail-container .detail-body-box .main-box .article-box .recommend-box {
-      display: none !important;
-    }
-    .osc-new-layout.page-space-blog .detail-toolbar-box,
-    .osc-new-layout.page-web-news .detail-toolbar-box,
-    .osc-new-layout.page-web-project .detail-toolbar-box {
-      display: none !important;
-    }
-  }
-}
-@-moz-document domain("oschina.net") {
-  @media print {
     .osc-new-layout .header-box--fixed {
       position: absolute;
     }
-    .detail-body-box .main-box {
-      width: 100% !important;
-    }
-    .osc-new-layout.page-space-blog .detail-box.collapse .collapse-bar,
-    .osc-new-layout.page-web-news .detail-box.collapse .collapse-bar,
-    .osc-new-layout.page-web-project .detail-box.collapse .collapse-bar,
-    .osc-new-layout.page-space-blog .comments-box.collapse .collapse-bar,
-    .osc-new-layout.page-web-news .comments-box.collapse .collapse-bar,
-    .osc-new-layout.page-web-project .comments-box.collapse .collapse-bar {
-      display: none !important;
-    }
-    .other-articles-box,
-    .osc-new-layout .header-box .search-box {
+  }
+  @media print {
+    .header-box .user-message,
+    .header-box .user-info .caret {
       display: none !important;
     }
     #footer,
     #copyright,
-    .sidebar-box,
-    .detail-toolbar-box {
+    .back-to-top {
       display: none !important;
     }
   }
 }
 @-moz-document url-prefix("https://www.oschina.net/news/") {
-  @media all {
-    .osc-new-layout.page-space-blog .detail-box.collapse .article-detail,
-    .osc-new-layout.page-web-news .detail-box.collapse .article-detail,
-    .osc-new-layout.page-web-project .detail-box.collapse .article-detail {
-      max-height: none !important;
-    }
-  }
   @media print {
-    .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .copyright-box,
-    .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .action-box,
-    .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .recommend-box {
+    .news-detail-container .sidebar-box,
+    .news-detail-container .detail-toolbar-box,
+    .news-detail-container .other-articles-box,
+    .news-detail-container .copyright-box,
+    .news-detail-container .action-box,
+    .news-detail-container .recommend-box {
       display: none !important;
     }
-    .osc-new-layout.page-space-blog .comments-box.collapse .comments-box__list .comment-list:not(.disabled-collapse) > .comment-item:not(.comment-item--child):nth-child(n + 3),
-    .osc-new-layout.page-web-news .comments-box.collapse .comments-box__list .comment-list:not(.disabled-collapse) > .comment-item:not(.comment-item--child):nth-child(n + 3),
-    .osc-new-layout.page-web-project .comments-box.collapse .comments-box__list .comment-list:not(.disabled-collapse) > .comment-item:not(.comment-item--child):nth-child(n + 3) {
-      display: block !important;
+    .news-detail-container .detail-body-box .main-box {
+      width: 100% !important;
     }
   }
 }
 @-moz-document url-prefix("https://www.oschina.net/p/") {
-  @media all {
-    .detail-body-box .main-box .content-box__inner .content-section.section-project-intro .detail-box.collapse .article-detail {
+  @media print {
+    .project-detail-container .sidebar-box,
+    .project-detail-container .detail-toolbar-box,
+    .project-detail-container .header-info__meta {
+      display: none !important;
+    }
+    .project-detail-container .detail-body-box .main-box {
+      width: 100% !important;
+    }
+    .project-detail-container .detail-body-box .article-detail {
       max-height: none !important;
     }
-  }
-  @media print {
-    .header-basic-box + .content-section-box {
+    .project-detail-container .detail-body-box .collapse-bar {
       display: none !important;
+    }
+    .project-detail-container .comment-item:not(.comment-item--child) {
+      display: block !important;
     }
   }
 }
