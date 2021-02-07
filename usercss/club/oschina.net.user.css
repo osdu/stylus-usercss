@@ -2,7 +2,7 @@
 @name           打印优化 - 开源中国社区
 @description    广告屏蔽 && 打印优化
 @author         snail
-@version        1.3.1
+@version        1.3.2
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/oschina.net.user.css
@@ -73,7 +73,8 @@
     .news-detail-container .other-articles-box,
     .news-detail-container .copyright-box,
     .news-detail-container .action-box,
-    .news-detail-container .recommend-box {
+    .news-detail-container .recommend-box,
+    .news-detail-container .codeBlock {
       display: none !important;
     }
     .news-detail-container .detail-body-box .main-box {
