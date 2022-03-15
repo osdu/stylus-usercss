@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name           打印优化 - 今日头条
+@description    打印优化
+@author         snail
+@version        1.0.0
+@preprocessor   less
+@namespace      https://github.com/osdu/stylus-usercss
+@homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/club/toutiao.com.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.toutiao.com/i") {
+    @media print {
+        .ttp-site-header {
+            .ttp-header-profile {
+                display: none !important;
+            }
+        }
+
+        .article-detail-container {
+            >.left-sidebar,
+            >.right-sidebar,
+            +.toolbar {
+                display: none !important;
+            }
+
+            >.main {
+                & {
+                    margin: 0 auto;
+                    width: 96%;
+                }
+
+                >.action,
+                .ttp-comment-block,
+                .detail-end-feed,
+                .detail-end-feed+.feed-m-loading {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
