@@ -55,6 +55,11 @@
   .home.blog .content > a[href^="https://jq.qq.com"] {
     display: none;
   }
+  img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"],
+  img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"] + a[href="http://www.51jike.top/"],
+  img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"] + a[href="https://www.123pan.com"] {
+    display: none;
+  }
   /* 首页 */
   @media screen and (max-width: 980px) {
     .home.blog .content {

@@ -9,70 +9,91 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.423down.com") {
+
 	/* 全局 */
 	.logo {
 		background: url(https://192.168.32.1/zd423.png) no-repeat;
 	}
+
 	body {
 		background: none;
 	}
+
 	.header {
 		background-color: #447db8;
 	}
+
 	.search-submit {
 		background-color: #458fce;
 	}
+
 	#hasfixed {
 		margin-top: 0;
 	}
+
 	#hasfixed .header {
 		position: static;
 	}
-	.footer + center {
+
+	.footer+center {
 		display: none;
 	}
+
 	/* 内页 */
 	.meta {
 		border-bottom: 1px solid #efefef;
 		padding-bottom: 10px;
 	}
+
 	.meta-tit {
 		padding-top: 20px;
 	}
+
 	.single .content {
 		padding-right: 20px;
 		margin-right: 0;
 	}
+
 	.single-post .sidebar,
 	.single-post .post-related {
 		display: none;
 	}
-	.wrapper .content p > img {
+
+	.wrapper .content p>img {
 		display: block;
 		max-width: 100%;
 		width: auto;
 		height: auto !important;
 	}
 
-	.home.blog .content > a[href^="https://jq.qq.com"]
-	{
+	.home.blog .content>a[href^="https://jq.qq.com"] {
 		display: none;
 	}
+
+	// 网盘推荐链接
+	img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"],
+	img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"]+a[href="http://www.51jike.top/"],
+	img[src="https://www.423down.com/wp-content/themes/D7/img/new.png"]+a[href="https://www.123pan.com"] {
+		display: none;
+	}
+
 	/* 首页 */
 	@media screen and (max-width: 980px) {
 		.home.blog .content {
 			padding-left: 0px;
 		}
 	}
+
 	@media print {
+
 		#respond,
 		#postcomments,
-		#postcomments + .queryinfo {
+		#postcomments+.queryinfo {
 			display: none;
 		}
 
 		.footer,
-		.footer + center {
+		.footer+center {
 			display: none;
 		}
 	}
