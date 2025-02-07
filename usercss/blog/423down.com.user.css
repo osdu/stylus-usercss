@@ -2,7 +2,7 @@
 @name           打印优化 - 423Down
 @description    样式美化 && 打印优化
 @author         snail
-@version        1.0.9
+@version        1.0.10
 @preprocessor   less
 @namespace      https://github.com/osdu/stylus-usercss
 @homepageURL    https://github.com/osdu/stylus-usercss/blob/master/usercss/blog/423down.com.user.css
@@ -10,7 +10,7 @@
 @-moz-document domain("www.423down.com") {
   /* 全局 */
   .logo {
-    background: url(https://192.168.32.1/zd423.png) no-repeat;
+    background: url(https://192.168.2.2/zd423.png) no-repeat;
   }
   body {
     background: none;
